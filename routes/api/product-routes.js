@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   try {
-    const product = Product.findAll({ //do i need req.params?
+    const product = Product.findAll({
       include: [
         Category,
         {
