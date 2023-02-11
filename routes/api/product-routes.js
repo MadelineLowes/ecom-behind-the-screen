@@ -10,8 +10,8 @@ router.get('/', (req, res) => {
       Category,
       {
         model: Tag,
-        through: ProductTag,
-      },
+        through: ProductTag
+      }
     ]
   })
     .then((products) => res.status(200).json(products))
@@ -29,8 +29,8 @@ router.get('/:id', (req, res) => {
       {
         model: Tag,
         through: ProductTag,
-        as: 'product_tag'
-      },
+        as: 'prod_tag'
+      }
     ]
   })
     .then((product) => {
@@ -47,7 +47,6 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   Product.create(req.body)
     .then((product) => {
-      // req.body.tagIds && 
       if (req.body.tagIds.length) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
           return {
@@ -66,7 +65,6 @@ router.post('/', (req, res) => {
 
 // update one product
 router.put('/:id', (req, res) => {
-  // update product data
   Product.update(req.body, {
     where: {
       id: req.params.id,
@@ -74,7 +72,11 @@ router.put('/:id', (req, res) => {
   })
     .then((product) => {
       // find all associated tags from ProductTag
-      return ProductTag.findAll({ where: { product_id: req.params.id } });
+      return ProductTag.findAll({
+        where: {
+          product_id: req.params.id
+        }
+      });
     })
     .then((productTags) => {
       // get list of current tag_ids
@@ -99,7 +101,7 @@ router.put('/:id', (req, res) => {
         ProductTag.bulkCreate(newProductTags),
       ]);
     })
-    .then((updatedProductTags) => res.json(updatedProductTags))
+    .then((updatedProductTags) => res.status(200).json(updatedProductTags))
     .catch((err) => res.status(400).json(err));
 });
 
@@ -107,8 +109,8 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   Product.destroy({
     where: {
-      id: req.params.id,
-    },
+      id: req.params.id
+    }
   })
     .then((product) => {
       if (!product) {
