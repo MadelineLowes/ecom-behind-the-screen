@@ -40,7 +40,7 @@ Users can follow the video walkthrough attached below or the steps listed.
 - Clone the repo
 
   ```sh
-  git clone https://github.com/MadelineLowes/organize-my-business
+  git clone https://github.com/MadelineLowes/ecom-behind-the-screens
   ```
 
 - Navigate into cloned repo
