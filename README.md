@@ -66,17 +66,17 @@ Users can follow the video walkthrough attached below or the steps listed.
   ```sh
   SOURCE db/schema.sql
   ```
-
-- Seed table to the database
-
-  ```sh
-  SOURCE seeds/index.js
-  ```
-
-- Exit mysql
+  
+  - Exit mysql
 
   ```sh
   quit
+  ```
+  
+- Seed table to the database
+
+  ```sh
+  npm run seed
   ```
 
 ## Usage
