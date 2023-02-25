@@ -139,8 +139,8 @@ Users can follow the video walkthrough attached below or the steps listed.
   localhost:3001/api/tags/1
   ```
 
-Walk-through video in VS Code & terminal: https://drive.google.com/file/d/11xxbNzvthIpWzpCByzsGFz3oFH9GZbmS/view
-Walk-through video in Insomnia: https://drive.google.com/file/d/1tVPMnW3gISF-FCiDUnRSfkwWwEXlbgmU/view
+- Walk-through video in VS Code & terminal: https://drive.google.com/file/d/11xxbNzvthIpWzpCByzsGFz3oFH9GZbmS/view
+- Walk-through video in Insomnia: https://drive.google.com/file/d/1tVPMnW3gISF-FCiDUnRSfkwWwEXlbgmU/view
 
 ## Credits
 
