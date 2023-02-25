@@ -70,7 +70,7 @@ Users can follow the video walkthrough attached below or the steps listed.
 - Seed table to the database
 
   ```sh
-  SOURCE db/seeds.sql
+  SOURCE seeds/index.js
   ```
 
 - Exit mysql
