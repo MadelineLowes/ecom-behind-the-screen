@@ -55,6 +55,14 @@ Users can follow the video walkthrough attached below or the steps listed.
   npm install
   ```
 
+- Create a file named '.env' to store sensitive information in; see the .env.EXAMPLE file for an example of what belongs here
+
+  ```sh
+  DB_NAME='ecommerce_db' // users datebase name
+  DB_USER='' // users mysql username
+  DB_PASSWORD='' // users mysql password
+  ```
+
 - Login to mysql
 
   ```sh
@@ -72,7 +80,7 @@ Users can follow the video walkthrough attached below or the steps listed.
   ```sh
   quit
   ```
-  
+
 - Seed table to the database
 
   ```sh
@@ -137,6 +145,9 @@ Walk-through video:
 
 - https://dev.mysql.com/doc/refman/8.0/en/
 - https://www.npmjs.com/package/mysql2
+- https://www.npmjs.com/package/sequelize
+- https://www.npmjs.com/package/dotenv
+
 ## License
 
 This project is covered by MIT licensing.
