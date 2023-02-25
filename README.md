@@ -86,6 +86,7 @@ Users can follow the video walkthrough attached below or the steps listed.
   ```sh
   npm run seed
   ```
+Walk-through video in VS Code & terminal: https://drive.google.com/file/d/11xxbNzvthIpWzpCByzsGFz3oFH9GZbmS/view
 
 ## Usage
 
@@ -139,7 +140,7 @@ Users can follow the video walkthrough attached below or the steps listed.
   localhost:3001/api/tags/1
   ```
 
-Walk-through video:
+Walk-through video in Insomnia: 
 
 ## Credits
 
