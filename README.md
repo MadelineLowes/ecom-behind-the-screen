@@ -40,7 +40,7 @@ Users can follow the video walkthrough attached below or the steps listed.
 - Clone the repo
 
   ```sh
-  git clone https://github.com/MadelineLowes/organize-my-business
+  git clone https://github.com/MadelineLowes/ecom-behind-the-screens
   ```
 
 - Navigate into cloned repo
@@ -74,17 +74,17 @@ Users can follow the video walkthrough attached below or the steps listed.
   ```sh
   SOURCE db/schema.sql
   ```
+  
+  - Exit mysql
+
+  ```sh
+  quit
+  ```
 
 - Seed table to the database
 
   ```sh
   npm run seed
-  ```
-
-- Exit mysql
-
-  ```sh
-  quit
   ```
 
 ## Usage
